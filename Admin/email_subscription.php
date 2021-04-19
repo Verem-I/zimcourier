@@ -6,7 +6,7 @@
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class ="active">
+          <li>
             <a href="index.php">
               <i class="nc-icon nc-bank"></i>
               <p>Home</p>
@@ -18,7 +18,7 @@
               <p>Contact Chat</p>
             </a>
           </li>
-          <li>
+          <li class ="active">
             <a href="email_subscription.php">
               <i class="nc-icon nc-email-85"></i>
               <p>NewsLetter</p>
@@ -48,7 +48,27 @@
     <div class="main-panel" style="height: 100vh;">
       <!-- Navbar -->
      <?php include 'includes/navigation.php' ?>
-
+     <div class="content">  
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              
+              <th scope="col">NewsLetter ID</th>
+              <th scope="col">Email Address</th>
+              <th scope="col">Delete</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            
+          </tbody>
+        </table>
+        </div>
+              
+            
+            </div>
+     
+    
       <!-- End Navbar -->
     <?php include 'includes/footer.php' ?>
       

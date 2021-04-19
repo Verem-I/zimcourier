@@ -6,7 +6,7 @@
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class ="active">
+          <li>
             <a href="index.php">
               <i class="nc-icon nc-bank"></i>
               <p>Home</p>
@@ -36,7 +36,7 @@
               <p>Tracking Management</p>
             </a>
           </li>
-          <li >
+          <li class ="active">
             <a href="tracking-location.php">
               <i class="nc-icon nc-world-2"></i>
               <p>Tracking Location</p>
@@ -46,9 +46,8 @@
       </div>
     </div>
     <div class="main-panel" style="height: 100vh;">
-      <!-- Navbar -->
+     <!-- Navbar -->
      <?php include 'includes/navigation.php' ?>
 
       <!-- End Navbar -->
     <?php include 'includes/footer.php' ?>
-      

@@ -25,17 +25,7 @@
               
             </div>
           </div>
-          <div class="col-md-3">
-            <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
-            <form action="#" method="post">
-              <div class="input-group mb-3">
-                <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
-                <div class="input-group-append">
-                  <button class="btn btn-primary text-white" type="button" id="button-addon2">Send</button>
-                </div>
-              </div>
-            </form>
-          </div>
+          <?php include 'newsletter.php' ?>
         </div>
         <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">

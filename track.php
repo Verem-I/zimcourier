@@ -12,7 +12,39 @@
         </div>
       </div>
     </div>  
-kljhadslahkll
-
+</div>
+<div class="container mt-5 mb-5">
+	<div class="row">
+		<div class="col-md-6 offset-md-3">
+			<h4>Current Location</h4>
+			<ul class="timeline">
+				<li>
+					<a href="#">Items Accepted by Courier</a>
+					<a href="#" class="float-right">21 March, 2014</a>
+				</li>
+				<li>
+					<a href="#">Collected</a>
+					<a href="#" class="float-right">4 March, 2014</a>
+					
+				</li>
+				<li>
+					<a href="#">Shipped</a>
+					<a href="#" class="float-right">1 April, 2014</a>
+					
+				</li>
+				<li>
+					<a href="#">Intrasit</a>
+					<a href="#" class="float-right">1 April, 2014</a>
+					
+				</li>
+				<li>
+					<a>Arrived at pickup destination</a>
+					<p  class="float-right">1 April, 2014</p>
+					
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
 
 <?php include 'includes/footer.php' ?>

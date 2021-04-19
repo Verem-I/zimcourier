@@ -6,13 +6,13 @@
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class ="active">
+          <li>
             <a href="index.php">
               <i class="nc-icon nc-bank"></i>
               <p>Home</p>
             </a>
           </li>
-          <li>
+          <li class ="active">
             <a href="contact.php">
               <i class="nc-icon nc-single-02"></i>
               <p>Contact Chat</p>
@@ -48,7 +48,20 @@
     <div class="main-panel" style="height: 100vh;">
       <!-- Navbar -->
      <?php include 'includes/navigation.php' ?>
-
+    <div class="content">  
+        <!-- Begin page content -->
+        <main class="flex-shrink-0">
+            <div class="container">
+                <?php view_contact_details(); ?>
+            </div>
+        </main>
+    </div>
+              
+            
+            </div>
+      </div>     
+      
+    
       <!-- End Navbar -->
     <?php include 'includes/footer.php' ?>
       

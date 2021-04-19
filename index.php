@@ -32,20 +32,21 @@
         <div class="col-md-4">
           <div class="free-quote bg-dark h-100">
             <h2 class="my-4 heading  text-center">Get Free Quote</h2>
-            <form method="post">
+            <form action="includes/functions.php" method="post" onsubmit="return validateQuoteForm()">
               <div class="form-group">
-                <label for="fq_name">Name</label>
-                <input type="text" class="form-control btn-block" id="fq_name" name="fq_name" placeholder="Enter Name">
+                <label for="quote_name" id="quote_name_info">Name</label>
+                <input type="text" class="form-control btn-block input-field" id="fq_name" name="quote_name" placeholder="Enter Name">
               </div>
               <div class="form-group mb-4">
-                <label for="fq_email">Email</label>
-                <input type="text" class="form-control btn-block" id="fq_email" name="fq_email" placeholder="Enter Email">
+                <label for="quote_email" id="quote_email_info">Email</label>
+                <input type="text" class="form-control btn-block input-field" id="fq_email" name="quote_email" placeholder="Enter Email">
               </div>
               <div class="form-group">
-                <input type="submit" class="btn btn-primary text-white py-2 px-4 btn-block" value="Get Quote">  
+                <input type="submit" class="btn btn-primary text-white py-2 px-4 btn-block" value="Get Quote" name="request_quote">  
               </div>
             </form>
           </div>
+         
         </div>
         <div class="col-md-4">
           <div class="feature-3 pricing h-100 text-center">
@@ -249,7 +250,36 @@
     </div>
 
 
-    
+    <script type="text/javascript">
+        function validateQuoteForm() {
+            var valid = true;
+
+            $(".info").html("");
+            $(".input-field").css('border', '#e0dfdf 1px solid');
+            var userName = $("#fq_name").val();
+            var userEmail = $("#fq_email").val();
+            
+            if (userName == "") {
+                $("#quote_name_info").html("Required.");
+                $("#fq_name").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+            if (userEmail == "") {
+                $("#quote_email_info").html("Required.");
+                $("#fq_email").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+            if (!userEmail.match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/))
+            {
+                $("#quote_email_info").html("Invalid Email Address.");
+                $("#fq_email").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+
+           
+            return valid;
+        }
+</script>
    <?php
    include 'includes/footer.php'
 

@@ -36,12 +36,65 @@
               <p>Tracking Management</p>
             </a>
           </li>
+          <li >
+            <a href="tracking-location.php">
+              <i class="nc-icon nc-world-2"></i>
+              <p>Tracking Location</p>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
-    <div class="main-panel" style="height: 100vh;">
+    
+    
      <!-- Navbar -->
+     
+     <div class="main-panel" style="height: 100vh;">
      <?php include 'includes/navigation.php' ?>
 
+     <div class="content">  
+        <form action="includes/functions.php" method = "post">
+         
+          <div class="form-group">
+         
+            <label for="exampleInputEmail1">Tracking Code</label>
+            <input type="text" class="form-control" name="track_no"  placeholder="Add Tracking Code">
+          </div>
+          <div class="form-group">
+         
+            <label for="exampleInputEmail1">Client Name</label>
+            <input type="text" class="form-control" name="client_name"  placeholder="Add Tracking Code">
+          </div>
+          
+          <button type="submit" name="add_track" class="btn btn-primary">Add Tracking code</button>
+
+      </form>
+
+
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              
+              <th scope="col">TRACK ID</th>
+              <th scope="col">TRACKING NUMBER</th>
+              <th scope="col">Clients Name</th>
+              <th scope="col">Delete</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+          
+          
+              <?php show_tracking_no(); ?>
+              
+            
+            
+          </tbody>
+        </table>
+        </div>
+              
+            
+            </div>
+     
       <!-- End Navbar -->
     <?php include 'includes/footer.php' ?>

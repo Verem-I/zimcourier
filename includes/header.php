@@ -1,5 +1,6 @@
 <?php session_start(); ?>
 <?php include "db.php"; ?>
+<?php include "functions.php"; ?>
 
 
 <!DOCTYPE html>

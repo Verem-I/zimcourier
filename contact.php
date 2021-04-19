@@ -20,46 +20,44 @@
 
             
 
-            <form action="#" class="p-5 bg-white">
-             
-
+            <form action="includes/functions.php" class="p-5 bg-white" method ="post" enctype="multipart/form-data" onsubmit="return validateContactForm()">
               <div class="row form-group">
                 <div class="col-md-6 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">First Name</label>
-                  <input type="text" id="fname" class="form-control">
+                  <label class="text-black" for="fname" id="fname-info">First Name</label>
+                  <input type="text" id="fname" class="form-control" name = "first_name">
                 </div>
                 <div class="col-md-6">
-                  <label class="text-black" for="lname">Last Name</label>
-                  <input type="text" id="lname" class="form-control">
+                  <label class="text-black" for="lname" id="lname-info">Last Name</label>
+                  <input type="text" id="lname" class="form-control" name = "last_name">
                 </div>
               </div>
 
               <div class="row form-group">
                 
                 <div class="col-md-12">
-                  <label class="text-black" for="email">Email</label> 
-                  <input type="email" id="email" class="form-control">
+                  <label class="text-black" for="email" id="email-info">Email</label> 
+                  <input type="email" id="email" class="form-control" name = "user_email">
                 </div>
               </div>
 
               <div class="row form-group">
                 
                 <div class="col-md-12">
-                  <label class="text-black" for="subject">Subject</label> 
-                  <input type="subject" id="subject" class="form-control">
+                  <label class="text-black" for="subject" id="subject-info">Subject</label> 
+                  <input type="subject" id="subject" class="form-control" name = "subject">
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <label class="text-black" for="message">Message</label> 
-                  <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here..."></textarea>
+                  <label class="text-black" for="message" id="message-info">Message</label> 
+                  <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here..." ></textarea>
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <input type="submit" value="Send Message" class="btn btn-primary py-2 px-4 text-white">
+                  <input type="submit" value="Send Message" class="btn btn-primary py-2 px-4 text-white" name="send_message">
                 </div>
               </div>
 
@@ -90,4 +88,51 @@
         </div>
       </div>
     </div>
+<script type="text/javascript">
+        function validateContactForm() {
+            var valid = true;
+
+            $(".info").html("");
+            $(".input-field").css('border', '#e0dfdf 1px solid');
+            var userName = $("#fname").val();
+            var lastName = $("#lname").val();
+            var userEmail = $("#email").val();
+            var subject = $("#subject").val();
+            var content = $("#message").val();
+            
+            if (userName == "") {
+                $("#fname-info").html("Required.");
+                $("#fname").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+            if (lastName == "") {
+                $("#lname-info").html("Required.");
+                $("#lname").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+            if (userEmail == "") {
+                $("#email-info").html("Required.");
+                $("#email").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+            if (!userEmail.match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/))
+            {
+                $("#email-info").html("Invalid Email Address.");
+                $("#email").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+
+            if (subject == "") {
+                $("#subject-info").html("Required.");
+                $("#subject").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+            if (content == "") {
+                $("#message-info").html("Required.");
+                $("#message").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+            return valid;
+        }
+</script>
  <?php include 'includes/footer.php' ?>

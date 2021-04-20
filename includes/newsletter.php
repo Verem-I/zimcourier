@@ -3,13 +3,14 @@
     <form method="post" onsubmit="return validateNewsletterForm()">
         <div class="input-group mb-3">
         <label for="newsletter-email" id="newsletter-email-info"></label>
-        <input type="email" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" name="newsletter_email" aria-label="Enter Email" aria-describedby="button-addon2" id="newsletter-email">
+        <input type="email" class="form-control border-secondary text-white bg-transparent .input-field" placeholder="Enter Email" name="newsletter_email" aria-label="Enter Email" aria-describedby="button-addon2" id="newsletter-email">
         <div class="input-group-append">
             <button class="btn btn-primary text-white" type="button" id="button-addon2" name="send_newsletter">Send</button>
         </div>
         </div>
     </form>
     <?php
+    
         function add_newsletter(){
             global $connection;
             if (isset($_POST['send_newsletter'])) {
@@ -19,7 +20,7 @@
                 if (!$result) {
                     die("could not send data" . mysqli_error($connection));
                 }else{
-                    header("Location: ../index.php?email_info_added");
+                    header("Location: ?email_info_added");
                 }
             }
         }

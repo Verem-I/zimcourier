@@ -2,8 +2,8 @@
 <?php session_start(); ?>
 <?php include "db.php"; ?>
 <?php include "functions.php"; ?>
-<?php// (isset($_SESSION['userLogged'])) ? $user = $_SESSION['userLogged'] : header("Location: ../cms-admin.php");
-//$sql = mysqli_query($connection, "SELECT * FROM users WHERE email='$user'");
+<?php (isset($_SESSION['userLogged'])) ? $user = $_SESSION['userLogged'] : header("Location: ../cms-admin.php");
+$sql = mysqli_query($connection, "SELECT * FROM users WHERE email='$user'");
 ?>
 <!doctype html>
 <html lang="en">

@@ -42,6 +42,12 @@
               <p>Tracking Location</p>
             </a>
           </li>
+          <li>
+            <a href="user-profile.php">
+              <i class="nc-icon nc-circle-10"></i>
+              <p>User Profile</p>
+            </a>
+          </li>
         </ul>
       </div>
     </div>

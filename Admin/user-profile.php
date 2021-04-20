@@ -36,13 +36,13 @@
               <p>Tracking Management</p>
             </a>
           </li>
-          <li class ="active">
+          <li >
             <a href="tracking-location.php">
               <i class="nc-icon nc-world-2"></i>
               <p>Tracking Location</p>
             </a>
           </li>
-          <li>
+          <li class ="active">
             <a href="user-profile.php">
               <i class="nc-icon nc-circle-10"></i>
               <p>User Profile</p>
@@ -52,8 +52,14 @@
       </div>
     </div>
     <div class="main-panel" style="height: 100vh;">
-     <!-- Navbar -->
+      <!-- Navbar -->
      <?php include 'includes/navigation.php' ?>
-
+    <div class="content">  
+      
+            
+    </div>
+     
+    
       <!-- End Navbar -->
     <?php include 'includes/footer.php' ?>
+      

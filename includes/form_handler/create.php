@@ -32,25 +32,12 @@
       header("Location: ../../cms-admin.php?error=password_is_short");
     }
     else{
-      if(empty($error)) {
-        $rand = rand(1,3);
-        switch ($rand) {
-          case "1":
-            $profile_pic = "users/profile_pics/defaults/head_1.png";
-            break;
-          case "2":
-            $profile_pic = "users/profile_pics/defaults/head_2.png";
-            break;
-          case "3":
-            $profile_pic = "users/profile_pics/defaults/head_3.png";
-            break;
-        }
         $hashedPwd = md5($pwd);
-        $sql = mysqli_query($mysqli, "INSERT INTO users VALUES('','$username','$email','$hashedPwd','$profile_pic','yes','0','Admin')");
+        $sql = mysqli_query($mysqli, "INSERT INTO users VALUES('','$username','$email','$hashedPwd','yes')");
         header("Location: ../../cms-admin.php?admin_created");
       }
     }
-  }
+
   function clean($data) {
     global $mysqli;
     $data = htmlspecialchars($data);

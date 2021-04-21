@@ -10,7 +10,7 @@ function add_quote(){
         }else{
         $quote_name = $_POST['quote_name'];
         $quote_email= $_POST['quote_email'];
-        $query = "INSERT INTO quote VALUES('','$quote_name','$quote_email')";
+        $query = "INSERT INTO quote(quote_name,quote_email), VALUES('$quote_name','$quote_email')";
         $result = mysqli_query($connection,$query);
             if (!$result) {
                 die("could not send data" . mysqli_error($connection));
@@ -30,7 +30,7 @@ function add_contact_details(){
         $user_email = $_POST['user_email'];
         $subject = $_POST['subject'];
         $message = $_POST['message'];
-        $query = "INSERT INTO contact VALUES('','$first_name','$last_name','$user_email','$subject','$message')";
+        $query = "INSERT INTO contact(first_name,last_name,user_email,subjects,messages) VALUES('$first_name','$last_name','$user_email','$subject','$message')";
         $result = mysqli_query($connection,$query);
         if(!$result){
             die("could not send data" . mysqli_error($connection));

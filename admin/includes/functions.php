@@ -111,8 +111,8 @@
             $first_name = $row['first_name'];
             $last_name = $row['last_name'];
             $user_email = $row['user_email'];
-            $subject = substr($row['subjects'], 0, 30);
-            $message =substr($row['messages'], 0, 50);
+            $subject = substr($row['topic'], 0, 30);
+            $message =substr($row['body'], 0, 50);
             echo"<tr>";
             echo"<td>{$contact_id}</td>";
             echo"<td>{$first_name}</td>";
@@ -157,8 +157,8 @@ function view_contact_details(){
                     $first_name = $row['first_name'];
                     $last_name = $row['last_name'];
                     $user_email = $row['user_email'];
-                    $subject = $row['subjects'];
-                    $message = $row['messages'];
+                    $subject = $row['topic'];
+                    $message = $row['body'];
                     $fullName = $first_name." ". $last_name;
                     echo"<h3 class='mt-5'>{$subject}</h3>";
                     echo"<p>Senders Name: {$fullName}</p>";

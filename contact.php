@@ -44,14 +44,14 @@
                 
                 <div class="col-md-12">
                   <label class="text-black" for="subject" id="subject-info">Subject</label> 
-                  <input type="subject" id="subject" class="form-control" name = "subject">
+                  <input type="subject" id="subject" class="form-control" name = "subjects">
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12">
                   <label class="text-black" for="message" id="message-info">Message</label> 
-                  <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here..." ></textarea>
+                  <textarea name="messages" id="message" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here..." ></textarea>
                 </div>
               </div>
 

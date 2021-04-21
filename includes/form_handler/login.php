@@ -1,6 +1,7 @@
 <?php
 session_start();
-$mysqli = new mysqli("localhost","root","","zimcourier") or die("Could not connect");
+//$mysqli = new mysqli("localhost","root","","zimcourier") or die("Could not connect");
+$mysqli = new mysqli("remotemysql.com","mLI3W7hJM0","JMwOuX6zUM","mLI3W7hJM0") or die("Could not connect");
 
 if(isset($_POST['login_submit'])) {
   $email = $_POST['email'];

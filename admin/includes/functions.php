@@ -12,7 +12,7 @@
                 $track_no = $_POST['track_no'];
                 $client_name = $_POST['client_name'];
                 $receiver = $_POST['receiver'];
-                $query = "INSERT INTO tracking_code VALUES('','$track_no','$client_name', '$receiver')";
+                $query = "INSERT INTO tracking_code(track_id,track_no,client_name,receiver) VALUES('','$track_no','$client_name', '$receiver')";
                 $result = mysqli_query($connection,$query);
                 if (!$result) {
                     die("could not send data" . mysqli_error($connection));

@@ -55,7 +55,25 @@
     <div class="main-panel" style="height: 100vh;">
       <!-- Navbar -->
      <?php include 'includes/navigation.php' ?>
-
+    <div class="content">
+      <table class="table table-bordered">
+          <thead>
+            <tr>
+            <th scope="col">Tracking ID</th>
+              <th scope="col">Tracking Number</th>
+              <th scope="col">Clients Name</th>
+              <th scope="col">Parcel Location</th>
+              <th scope="col">Status Update</th>
+              <th scope="col">Delete</th>
+              
+              
+            </tr>
+          </thead>
+          <tbody>
+          
+          </tbody>
+        </table>
+    </div>
       <!-- End Navbar -->
     <?php include 'includes/footer.php' ?>
       

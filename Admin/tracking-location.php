@@ -54,6 +54,38 @@
     <div class="main-panel" style="height: 100vh;">
      <!-- Navbar -->
      <?php include 'includes/navigation.php' ?>
+     <div class="content">  
+        <form action="includes/functions.php" method = "post">
+         
+          <div class="form-group">
+         
+            <label for="locations">Location</label>
+            <input type="text" class="form-control" name="location" id="locations"  placeholder="Add Tracking Code">
+          </div>
+          
+          <button type="submit" name="add_location" class="btn btn-primary">Add Location</button>
 
+      </form>
+
+
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              
+              <th scope="col">Location ID</th>
+              <th scope="col">Locations</th>
+              <th scope="col">Delete</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+           <?php show_location(); ?> 
+            
+          </tbody>
+        </table>
+        </div>
+              
+            
+            </div>
       <!-- End Navbar -->
     <?php include 'includes/footer.php' ?>

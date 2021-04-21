@@ -26,7 +26,7 @@
                   </p>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Logout</a>
+                  <a class="dropdown-item" href="index.php?logout">Logout</a>
                 </div>
               </li>
             </ul>

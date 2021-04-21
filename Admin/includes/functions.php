@@ -11,7 +11,8 @@
             else{
                 $track_no = $_POST['track_no'];
                 $client_name = $_POST['client_name'];
-                $query = "INSERT INTO tracking_code VALUES('','$track_no','$client_name')";
+                $receiver = $_POST['receiver'];
+                $query = "INSERT INTO tracking_code VALUES('','$track_no','$client_name', '$receiver')";
                 $result = mysqli_query($connection,$query);
                 if (!$result) {
                     die("could not send data" . mysqli_error($connection));
@@ -37,10 +38,12 @@
             $track_id = $row['track_id'];
             $track_no = $row['track_no'];
             $client_name= $row['client_name'];
+            $receiver= $row['receiver'];
             echo"<tr>";
             echo"<td>{$track_id}</td>";
             echo"<td>{$track_no}</td>";
             echo"<td>{$client_name}</td>";
+            echo"<td>{$receiver}</td>";
             echo"<td><a class='btn btn-danger'  href='tracking.php?delete_track={$track_id}'>Delete</a></td>";
             echo"</tr>";
         }
@@ -171,3 +174,59 @@ function view_contact_details(){
 
         
 }
+//add current location
+function add_location(){
+    global $connection;
+    if (isset($_POST['add_location'])) {
+        if (empty($_POST['location'])) {
+            header("Location: ../tracking.php?Fields_cannot_be_empty");
+        }
+        else{
+            $location = $_POST['location'];
+            $query = "INSERT INTO locations(locations) VALUES('$location')";
+            $result = mysqli_query($connection,$query);
+            if (!$result) {
+                die("could not send data" . mysqli_error($connection));
+            }else{
+                header("Location: ../tracking-location.php?track_info_added");
+            }
+        }
+    }
+    
+    
+}
+add_location();
+//show locations
+function show_location()
+{
+  global $connection;
+  $query = "SELECT * FROM locations";
+  $result = mysqli_query($connection, $query);
+
+  while ($row = mysqli_fetch_assoc($result)) {
+    $location_id = $row['location_id'];
+    $locations = $row['locations'];
+
+    echo "<tr>";
+    echo "<td>{$location_id}</td>";
+    echo "<td>{$locations}</td>";
+    echo "<td><a href='tracking-location.php?delete_location={$location_id}' class='btn btn-danger'>Delete</a></td>";
+    echo "</tr>";
+  }
+}
+//delete location
+function delete_location()
+{
+  global $connection;
+  if (isset($_GET['delete_location'])) {
+    $location_id = $_GET['delete_location'];
+    $query = "DELETE FROM locations WHERE location_id = $location_id";
+    $result = mysqli_query($connection, $query);
+    if (!$result) {
+      die("Could not delete data " . mysqli_error($connection));
+    } else {
+      header("Location: tracking-location.php?location_deleted");
+    }
+  }
+}
+delete_location();

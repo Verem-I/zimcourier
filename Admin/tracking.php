@@ -59,20 +59,25 @@
      <?php include 'includes/navigation.php' ?>
 
      <div class="content">  
-        <form action="includes/functions.php" method = "post">
+        <form action="includes/functions.php" method = "post" style="width:450px;">
          
           <div class="form-group">
          
-            <label for="exampleInputEmail1">Tracking Code</label>
-            <input type="text" class="form-control" name="track_no"  placeholder="Add Tracking Code">
+            <label for="tracking-no">Tracking Code</label>
+            <input type="text" id="tracking-no" class="form-control" name="track_no"  placeholder="Add Tracking Code">
           </div>
           <div class="form-group">
          
-            <label for="exampleInputEmail1">Client Name</label>
-            <input type="text" class="form-control" name="client_name"  placeholder="Add Tracking Code">
+            <label for="client-name">Sender Name</label>
+            <input type="text" id="client-name" class="form-control" name="client_name"  placeholder="Add Tracking Code">
+          </div>
+          <div class="form-group">
+         
+            <label for="receiver">Receiver Name</label>
+            <input type="text" id="receiver" class="form-control" name="receiver"  placeholder="Add Tracking Code">
           </div>
           
-          <button type="submit" name="add_track" class="btn btn-primary">Add Tracking code</button>
+          <button type="submit" name="add_track" class="btn btn-primary">Add Tracking Details</button>
 
       </form>
 
@@ -83,7 +88,8 @@
               
               <th scope="col">TRACK ID</th>
               <th scope="col">TRACKING NUMBER</th>
-              <th scope="col">Clients Name</th>
+              <th scope="col">Sender</th>
+              <th scope="col">Receiver</th>
               <th scope="col">Delete</th>
               
             </tr>
@@ -100,7 +106,7 @@
         </div>
               
             
-            </div>
+  </div>
      
       <!-- End Navbar -->
     <?php include 'includes/footer.php' ?>

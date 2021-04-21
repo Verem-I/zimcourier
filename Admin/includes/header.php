@@ -4,7 +4,18 @@
 <?php include "functions.php"; ?>
 <?php (isset($_SESSION['userLogged'])) ? $user = $_SESSION['userLogged'] : header("Location: ../cms-admin.php");
 $sql = mysqli_query($connection, "SELECT * FROM users WHERE email='$user'");
+
+
+
+//logout
+if(isset($_GET['logout'])){
+  unset($_SESSION['userLogged']);
+  header("Location: index.php");
+}
+
 ?>
+
+
 <!doctype html>
 <html lang="en">
 
@@ -27,7 +38,7 @@ $sql = mysqli_query($connection, "SELECT * FROM users WHERE email='$user'");
   <link href="./assets/demo/demo.css" rel="stylesheet" />
 </head>
 
-<body class="">
+<body class="" >
   <div class="wrapper ">
     <div class="sidebar" data-color="white" data-active-color="danger">
       <div class="logo">

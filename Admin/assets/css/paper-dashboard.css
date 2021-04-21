@@ -4183,7 +4183,8 @@ License - nucleoapp.com/license/
   .register-page .footer {
     position: relative; }
   .register-page .info-area.info-horizontal {
-    margin-top: 0; } }
+    margin-top: 0;
+   } }
 
 @media screen and (max-width: 413px) {
   .fixed-plugin .dropdown.show-dropdown.show .dropdown-menu.show {

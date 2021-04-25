@@ -68,13 +68,13 @@
             
             <div class="p-4 mb-3 bg-white">
               <p class="mb-0 font-weight-bold">Address</p>
-              <p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
+              <p class="mb-4"></p>
 
               <p class="mb-0 font-weight-bold">Phone</p>
-              <p class="mb-4"><a href="TEL:+1 232 3235 324">+1 232 3235 324</a></p>
+              <p class="mb-4"><a href="TEL:+1 (513) 428-9826">+1 (513) 428-9826</a></p>
 
               <p class="mb-0 font-weight-bold">Email Address</p>
-              <p class="mb-0"><a href="mailTO:zimcourierservices@gmail.com">youremail@domain.com</a></p>
+              <p class="mb-0"><a href="mailTO:zimcourierdeliveryserviceltd@gmail.com">zimcourierdeliveryservices@gmail.com</a></p>
 
             </div>
             

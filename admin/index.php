@@ -61,16 +61,22 @@
             <tr>
             <th scope="col">Tracking ID</th>
               <th scope="col">Tracking Number</th>
-              <th scope="col">Clients Name</th>
-              <th scope="col">Parcel Location</th>
+              <th scope="col">Sender</th>
+              <th scope="col">Receiver</th>
+              <th scope="col">Content</th>
+              <th scope="col">Current Location</th>
+              <th scope="col">Previous Location</th>
+              <th scope="col">Delivery Address</th>
+              <th scope="col">Estimated time</th>
+              <th scope="col">Date</th>
               <th scope="col">Status Update</th>
               <th scope="col">Delete</th>
               
-              
+            
             </tr>
           </thead>
           <tbody>
-          
+          <?php show_tracking_no() ?>
           </tbody>
         </table>
     </div>

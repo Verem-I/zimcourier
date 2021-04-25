@@ -54,7 +54,7 @@
     <div class="main-panel" style="height: 100vh;">
       <!-- Navbar -->
      <?php include 'includes/navigation.php' ?>
-    <div class="content">  
+    <!-- <div class="content">  
         <table class="table table-bordered">
           <thead>
             <tr>
@@ -74,13 +74,35 @@
             <?php show_contact(); ?>
           </tbody>
         </table>
-    </div>
+    </div> -->
               
-            
-            </div>
-      </div>     
-      
+    <div class="content">
+        <div class="row">
+          <div class="col-md-12">
+          <table class="table table-bordered">
+          <thead>
+            <tr>
+              
+              <th scope="col">Contact ID</th>
+              <th scope="col"> First Name</th>
+              <th scope="col"> Last Name</th>
+              <th scope="col">Email Address</th>
+              <th scope="col">Subject</th>
+              <th scope="col">Message</th>
+              <th scope="col">View</th>
+              <th scope="col">Delete</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <?php show_contact(); ?>
+          </tbody>
+        </table>
+          </div>
+        </div>
+      </div>
     
       <!-- End Navbar -->
-    <?php include 'includes/footer.php' ?>
+  </div>
+  <?php include 'includes/footer.php' ?>
       

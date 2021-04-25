@@ -13,38 +13,34 @@
       </div>
     </div>  
 </div>
-<div class="container mt-5 mb-5">
-	<div class="row">
-		<div class="col-md-6 offset-md-3">
-			<h4>Current Location</h4>
-			<ul class="timeline">
-				<li>
-					<a href="#">Items Accepted by Courier</a>
-					<a href="#" class="float-right">21 March, 2014</a>
-				</li>
-				<li>
-					<a href="#">Collected</a>
-					<a href="#" class="float-right">4 March, 2014</a>
-					
-				</li>
-				<li>
-					<a href="#">Shipped</a>
-					<a href="#" class="float-right">1 April, 2014</a>
-					
-				</li>
-				<li>
-					<a href="#">Intrasit</a>
-					<a href="#" class="float-right">1 April, 2014</a>
-					
-				</li>
-				<li>
-					<a>Arrived at pickup destination</a>
-					<p  class="float-right">1 April, 2014</p>
-					
-				</li>
-			</ul>
-		</div>
-	</div>
+
+<div class="site-section bg-light ">
+<div class="container mt-5 mb-5 ">
+<form action="track-search.php" method="post" class="p-5 bg-white ">
+             
+
+			 
+
+			 <div class="row form-group">
+			   
+			   <div class="col-md-12">
+				 <label class="text-black" for="tracking_no">Tracking Number</label> 
+				 <input type="text" name="search"  id="tracking_no" class="form-control" style="max-width:500px; " placeholder="Enter your tracking number.....">
+			   </div>
+			 </div>
+
+			
+
+			 <div class="row form-group">
+			   <div class="col-md-12">
+				 <input type="submit" value="Track Order" name="track_shipment" class="btn btn-primary py-2 px-4 text-white">
+			   </div>
+			 </div>
+
+ 
+		   </form>
+</div>
+	
 </div>
 
 <?php include 'includes/footer.php' ?>

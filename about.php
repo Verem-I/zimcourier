@@ -26,31 +26,11 @@
             <div class="text-left pb-1 border-primary mb-4">
               <h2 class="text-primary">Our History</h2>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deleniti reprehenderit animi est eaque corporis! Nisi, asperiores nam amet doloribus, soluta ut reiciendis. Consequatur modi rem, vero eos ipsam voluptas.</p>
-            <p class="mb-5">Error minus sint nobis dolor laborum architecto, quaerat. Voluptatum porro expedita labore esse velit veniam laborum quo obcaecati similique iusto delectus quasi!</p>
+            <p>Zim logistics is a leading logistics and distribution services company established in 2002. We offer a wide array of express courier and logistic support solutions to our various customers.
+            </p>
+            <p class="mb-5">With over 400 highly skilled personnel, we have excellent competencies in striving sectors such as Financial Services, Manufacturing, Telecommunications, Government Agencies, and Oil & Gas/Utilities. As a diverse end-to-end logistics solutions provider, we offer a range of expertise aimed at helping customers re-engineer and re-invent their businesses to compete successfully in an ever-changing marketplace, with the final objective of safely and promptly delivering all our customers consignments as expected.</p>
 
-            <div class="row">
-              <div class="col-md-12 mb-md-5 mb-0 col-lg-6">
-                <div class="unit-4">
-                  <div class="unit-4-icon mb-3 mr-4"><span class="text-primary flaticon-frontal-truck"></span></div>
-                  <div>
-                    <h3>Ground Shipping</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis.</p>
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12 mb-md-5 mb-0 col-lg-6">
-                <div class="unit-4">
-                  <div class="unit-4-icon mb-3 mr-4"><span class="text-primary flaticon-travel"></span></div>
-                  <div>
-                    <h3>Air Freight</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis.</p>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
+           
           </div>
           
         </div>
@@ -128,12 +108,7 @@
               <h3>Christine Rooster</h3>
               <p class="position text-muted">Co-Founder, President</p>
               <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
-              <ul class="ul-social-circle">
-                <li><a href="#"><span class="icon-facebook"></span></a></li>
-                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                <li><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
+              
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
@@ -142,12 +117,7 @@
               <h3>Brandon Sharp</h3>
               <p class="position text-muted">Co-Founder, COO</p>
               <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
-              <ul class="ul-social-circle">
-                <li><a href="#"><span class="icon-facebook"></span></a></li>
-                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                <li><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
+              
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
@@ -156,12 +126,7 @@
               <h3>Connor Hodson</h3>
               <p class="position text-muted">Marketing</p>
               <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
-              <ul class="ul-social-circle">
-                <li><a href="#"><span class="icon-facebook"></span></a></li>
-                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                <li><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
+              
             </div>
           </div>
         </div>

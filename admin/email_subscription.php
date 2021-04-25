@@ -66,7 +66,7 @@
             </tr>
           </thead>
           <tbody>
-            
+            <?php show_newsletter(); ?>
           </tbody>
         </table>
         </div>

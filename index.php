@@ -26,7 +26,7 @@
               <span class="icon-dollar"></span>
             </div>
             <h2 class="my-4 heading">Best Prices</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsum odio minima tempora animi iure.</p>
+            <p>Looking for a low cost courier service? Send your parcel with us and you'll get the best rates - we consolidate all our deliveries, allowing us to negotiate excellent prices that major carriers don't offer when you go direct.</p>
           </div>
         </div>
         <div class="col-md-4">
@@ -54,7 +54,7 @@
               <span class="icon-phone"></span>
             </div>
             <h2 class="my-4 heading">24/7 Support</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsum odio minima tempora animi iure.</p>
+            <p>We offer dependable, on-demand support options including 24/7 technical and remote support. </p>
           </div>
         </div>
       </div>
@@ -65,7 +65,7 @@
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center border-primary">
             <h2 class="mb-0 text-primary">What We Offer</h2>
-            <p class="color-black-opacity-5">Lorem ipsum dolor sit amet.</p>
+            <p class="color-black-opacity-5">Top Notch Services</p>
           </div>
         </div>
         <div class="row align-items-stretch">
@@ -74,7 +74,7 @@
               <div class="unit-4-icon mr-4"><span class="text-primary flaticon-travel"></span></div>
               <div>
                 <h3>Air Freight</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p>With a global network and advanced logistics solutions, our air freight services provide comprehensive solutions for your air cargo needs.</p>
                
               </div>
             </div>
@@ -84,7 +84,7 @@
               <div class="unit-4-icon mr-4"><span class="text-primary flaticon-sea-ship-with-containers"></span></div>
               <div>
                 <h3>Ocean Freight</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p>Zim ocean freight ships more than 2,000 containers a day to ports all around the world, making us a top forwarder for your ocean freight shipments.</p>
 
               </div>
             </div>
@@ -94,7 +94,7 @@
               <div class="unit-4-icon mr-4"><span class="text-primary flaticon-frontal-truck"></span></div>
               <div>
                 <h3>Ground Shipping</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p>From road to rail, our surface freight solutions get your shipments where they need to be, when they need to be there.</p>
                
               </div>
             </div>
@@ -115,7 +115,7 @@
             <img src="images/img_1.jpg" alt="Image" class="img-fluid">
             <div class="unit-1-text">
               <h3 class="unit-1-heading">Storage</h3>
-              <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus voluptate libero.</p>
+              <p class="px-5">Zim Logistics provides full service long and short term storage and distribution solutions for your business. We unload your goods, store them in our secure warehouse, pick pack and dispatch your consignments.</p>
             </div>
           </a>
         </div>
@@ -125,7 +125,7 @@
             <img src="images/img_2.jpg" alt="Image" class="img-fluid">
             <div class="unit-1-text">
               <h3 class="unit-1-heading">Air Transports</h3>
-              <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus voluptate libero.</p>
+              <p class="px-5">With a global network and advanced logistics solutions, our air freight services provide comprehensive solutions for your air cargo needs.</p>
             </div>
           </a>
         </div>
@@ -135,27 +135,18 @@
             <img src="images/img_3.jpg" alt="Image" class="img-fluid">
             <div class="unit-1-text">
               <h3 class="unit-1-heading">Cargo Transports</h3>
-              <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus voluptate libero.</p>
+              <p class="px-5">Zim ocean freight ships more than 2,000 containers a day to ports all around the world, making us a top forwarder for your ocean freight shipments.</p>
             </div>
           </a>
         </div>
 
-        <div>
-          <a href="#" class="unit-1 text-center">
-            <img src="images/img_4.jpg" alt="Image" class="img-fluid">
-            <div class="unit-1-text">
-              <h3 class="unit-1-heading">Cargo Ship</h3>
-              <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus voluptate libero.</p>
-            </div>
-          </a>
-        </div>
-
+        
         <div>
           <a href="#" class="unit-1 text-center">
             <img src="images/img_5.jpg" alt="Image" class="img-fluid">
             <div class="unit-1-text">
               <h3 class="unit-1-heading">Ware Housing</h3>
-              <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus voluptate libero.</p>
+              <p class="px-5">Zim handles all your essential warehousing needs with the same dependability and standards of excellence that we are known for in all our services. our warehouses are equipped with state-of-the-art surveillance and alarm systems, together with a professionally trained staff.</p>
             </div>
           </a>
         </div>
@@ -175,11 +166,11 @@
 
           <div class="col-md-7" data-aos="fade-up" data-aos-delay="400">
             <h2 class=" text-primary">Track Your Order</h2>
-            <form action="#" method="post">
+            <form action="track-search.php" method="post">
               <div class="input-group mb-3">
-                <input type="text" class="form-control border-secondary " placeholder="Enter your Tracking number" aria-label="Enter Email" aria-describedby="button-addon2">
+                <input type="text" class="form-control border-secondary " placeholder="Enter your Tracking number" aria-label="Enter Email" aria-describedby="button-addon2" name="search">
                 <div class="input-group-append">
-                  <button class="btn btn-primary text-white" type="button" id="button-addon2">Track Shipment</button>
+                  <button class="btn btn-primary text-white" name ="track_shipment" type="submit" id="button-addon2">Track Shipment</button>
                 </div>
               </div>
             </form>

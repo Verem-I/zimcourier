@@ -52,7 +52,11 @@
       </div>
     </div>
     
+    <?php 
+     $sql = "SELECT * FROM locations";
+     $res = mysqli_query($connection,$sql);
     
+    ?>
      <!-- Navbar -->
      
      <div class="main-panel" style="height: 100vh;">
@@ -69,44 +73,68 @@
           <div class="form-group">
          
             <label for="client-name">Sender Name</label>
-            <input type="text" id="client-name" class="form-control" name="client_name"  placeholder="Add Tracking Code">
+            <input type="text" id="client-name" class="form-control" name="client_name"  placeholder="input senders name">
           </div>
           <div class="form-group">
          
             <label for="receiver">Receiver Name</label>
-            <input type="text" id="receiver" class="form-control" name="receiver"  placeholder="Add Tracking Code">
+            <input type="text" id="receiver" class="form-control" name="receiver"  placeholder="Input receivers name ">
           </div>
-          
+          <div class="form-group">
+          <div class="form-group">
+         
+            <label for="content">Package Content</label>
+            <input type="text" id="content" class="form-control" name="content"  placeholder="package content">
+          </div>
+          <div class="form-group">
+         
+            <label for="current_location">Current Location</label>
+            <select name="current_location" class="form-control" id="">
+            <?php 
+              while ($row = mysqli_fetch_array($res)){
+                $locations = $row['locations'];
+                echo" <option value='$locations'>$locations</option>";
+              }
+            
+            ?>
+           
+           </select>
+          </div>
+          <div class="form-group">
+         
+            <label for="previous_location">Previous Location</label>
+           <select name="previous_location" class="form-control" id="">
+           <?php
+              $sql = "SELECT * FROM locations";
+              $res = mysqli_query($connection,$sql);
+
+              while ($row = mysqli_fetch_array($res)){
+                $locations = $row['locations'];
+                echo" <option value='$locations'>$locations</option>";
+              }
+            
+            ?>
+           </select>
+          </div>
+          <div class="form-group">
+         
+            <label for="delivery_address">Delivery Address</label>
+            <input type="text" id="delivery_address" class="form-control" name="delivery_address"  placeholder="Input delivery address">
+          </div>
+          <div class="form-group">
+         
+            <label for="estimated_delivery">Estimated Delivery Time</label>
+            <input type="text" id="estimated_delivery" class="form-control" name="estimated_delivery"  placeholder="Input estimated delivery time">
+          </div>
           <button type="submit" name="add_track" class="btn btn-primary">Add Tracking Details</button>
 
       </form>
 
 
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-              
-              <th scope="col">TRACK ID</th>
-              <th scope="col">TRACKING NUMBER</th>
-              <th scope="col">Sender</th>
-              <th scope="col">Receiver</th>
-              <th scope="col">Delete</th>
-              
-            </tr>
-          </thead>
-          <tbody>
-          
-          
-              <?php show_tracking_no(); ?>
-              
-            
-            
-          </tbody>
-        </table>
         </div>
               
             
   </div>
      
       <!-- End Navbar -->
-    <?php include 'includes/footer.php' ?>
+    <?php// include 'includes/footer.php' ?>

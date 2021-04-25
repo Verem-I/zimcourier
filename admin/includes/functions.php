@@ -12,7 +12,14 @@
                 $track_no = $_POST['track_no'];
                 $client_name = $_POST['client_name'];
                 $receiver = $_POST['receiver'];
-                $query = "INSERT INTO tracking_code(track_no,client_name,receiver) VALUES('$track_no','$client_name', '$receiver')";
+                $current_location = $_POST['current_location'];
+                $content = $_POST['content'];
+                $previous_location = $_POST['previous_location'];
+                $delivery_address = $_POST['delivery_address'];
+                $estimated_delivery = $_POST['estimated_delivery'];
+                $date = date("l d F Y");
+                
+                $query = "INSERT INTO tracking_code(track_no,client_name,receiver,current_location,previous_location,delivery_address,estimated_delivery, track_date, content) VALUES('$track_no','$client_name', '$receiver' ,'$current_location','$previous_location', '$delivery_address','$estimated_delivery', '$date' , '$content')";
                 $result = mysqli_query($connection,$query);
                 if (!$result) {
                     die("could not send data" . mysqli_error($connection));
@@ -39,12 +46,26 @@
             $track_no = $row['track_no'];
             $client_name= $row['client_name'];
             $receiver= $row['receiver'];
+            $content = substr($row['content'],0,10);
+            $current_location = $row['current_location'];
+            $previous_location = $row['previous_location'];
+            $delivery_address = substr($row['delivery_address'],0,20);
+            $estimated_delivery = substr($row['estimated_delivery'],0,30);
+            $date = $row['track_date'];
             echo"<tr>";
             echo"<td>{$track_id}</td>";
             echo"<td>{$track_no}</td>";
             echo"<td>{$client_name}</td>";
             echo"<td>{$receiver}</td>";
-            echo"<td><a class='btn btn-danger'  href='tracking.php?delete_track={$track_id}'>Delete</a></td>";
+            echo"<td>{$content}..</td>";
+            echo"<td>{$current_location}</td>";
+            echo"<td>{$previous_location}</td>";
+            echo"<td>{$delivery_address}...</td>";
+            echo"<td>{$estimated_delivery}</td>";
+            echo"<td>{$date}</td>";
+            echo"<td><a class='btn btn-primary'  href='edit_tracking.php?edit_track=$track_id'>Upadate</a></td>";
+            echo"<td><a class='btn btn-danger'  href='index.php?delete_track={$track_id}'>Delete</a></td>";
+            
             echo"</tr>";
         }
     }
@@ -58,7 +79,7 @@
             if (!$result) {
                 die("could not send data" . mysqli_error($connection));
             }else{
-                header("Location: tracking.php?track_no_deleted");
+                header("Location: index.php?track_no_deleted");
             }
 
         }
@@ -84,6 +105,38 @@
             echo"</tr>";
         }
     }
+    //show newsletter
+    function show_newsletter(){
+        global $connection;
+        $query = "SELECT * FROM newsletter";
+        $result = mysqli_query($connection,$query);
+
+        while ($row= mysqli_fetch_assoc($result)) { 
+            $newsletter_id = $row['newsletter_id'];
+            $newsletter_email= $row['newsletter_email'];
+            echo"<tr>";
+            echo"<td>{$newsletter_id}</td>";
+            echo"<td><a href='mailto:{$newsletter_email}'>{$newsletter_email}</a></td>";
+            echo"<td><a class='btn btn-danger'  href='quote.php?delete_newsletter={$newsletter_id}'>Delete</a></td>";
+            echo"</tr>";
+        }
+    }
+    function delete_newsletter(){
+        global $connection;
+        if (isset($_GET['delete_newsletter'])) {
+            $newsletter_id = $_GET['delete_newsletter'];
+           $query = "DELETE FROM newsletter where newsletter_id=$newsletter_id";
+           $result= mysqli_query($connection,$query);
+           
+            if (!$result) {
+                die("could not send data" . mysqli_error($connection));
+            }else{
+                header("Location: email_subscription.php?newsletter_deleted");
+            }
+
+        }
+    }
+    delete_newsletter();
     //delete quote
     function delete_quote(){
         global $connection;
@@ -230,3 +283,28 @@ function delete_location()
   }
 }
 delete_location();
+
+
+//modify tracking info
+if(isset($_POST['edit_tracking'])) {
+    global $connection;
+
+    $edit_id = $_POST['edit_track_id'];
+    $tracking_no = $_POST['track_no'];
+    $send_name = $_POST['client_name'];
+    $receive_name = $_POST['receiver'];
+    $content = $_POST['content'];
+    $current_loc = $_POST['current_location'];
+    $previous_loc = $_POST['previous_location'];
+    $delivery_add = $_POST['delivery_address'];
+    $estm_time = $_POST['estimated_delivery'];
+
+	$query = mysqli_query($connection, "UPDATE tracking_code  SET track_no='$tracking_no', client_name='$send_name',receiver='$receive_name', current_location='$current_loc',previous_location='$previous_loc', delivery_address='$delivery_add',estimated_delivery='$estm_time', content='$content' WHERE track_id='$edit_id'");
+	if(!$query) {
+        die("Could not modify post " . mysqli_error($connection));
+    }else{
+		header("Location: ../index.php?tracking_details_updated");
+	}
+
+	//echo "<script>alert('$edit_id')</script>";
+}

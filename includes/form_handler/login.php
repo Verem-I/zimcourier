@@ -17,7 +17,7 @@ if(isset($_POST['login_submit'])) {
   if($email === $db_email && $db_pwd === $rehashpwd) {
     $_SESSION['userLogged'] = $email;
     $_SESSION['username'] = $username;
-    header("Location: ../../admin");
+    header("Location: ../../akevm");
   }else{
     $_SESSION['log_email'] = $email;
     header("Location: ../../cms-admin.php?wrong_entries");

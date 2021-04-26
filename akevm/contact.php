@@ -6,13 +6,13 @@
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class ="active">
+          <li>
             <a href="index.php">
               <i class="nc-icon nc-bank"></i>
               <p>Home</p>
             </a>
           </li>
-          <li>
+          <li class ="active">
             <a href="contact.php">
               <i class="nc-icon nc-single-02"></i>
               <p>Contact Chat</p>
@@ -36,7 +36,6 @@
               <p>Tracking Management</p>
             </a>
           </li>
-          
           <li >
             <a href="tracking-location.php">
               <i class="nc-icon nc-world-2"></i>
@@ -55,25 +54,55 @@
     <div class="main-panel" style="height: 100vh;">
       <!-- Navbar -->
      <?php include 'includes/navigation.php' ?>
-    <div class="content">
-      <table class="table table-bordered">
+    <!-- <div class="content">  
+        <table class="table table-bordered">
           <thead>
             <tr>
-            <th scope="col">Tracking ID</th>
-              <th scope="col">Tracking Number</th>
-              <th scope="col">Clients Name</th>
-              <th scope="col">Parcel Location</th>
-              <th scope="col">Status Update</th>
-              <th scope="col">Delete</th>
               
+              <th scope="col">Contact ID</th>
+              <th scope="col"> First Name</th>
+              <th scope="col"> Last Name</th>
+              <th scope="col">Email Address</th>
+              <th scope="col">Subject</th>
+              <th scope="col">Message</th>
+              <th scope="col">View</th>
+              <th scope="col">Delete</th>
               
             </tr>
           </thead>
           <tbody>
-          
+            <?php show_contact(); ?>
           </tbody>
         </table>
-    </div>
+    </div> -->
+              
+    <div class="content">
+        <div class="row">
+          <div class="col-md-12">
+          <table class="table table-bordered">
+          <thead>
+            <tr>
+              
+              <th scope="col">Contact ID</th>
+              <th scope="col"> First Name</th>
+              <th scope="col"> Last Name</th>
+              <th scope="col">Email Address</th>
+              <th scope="col">Subject</th>
+              <th scope="col">Message</th>
+              <th scope="col">View</th>
+              <th scope="col">Delete</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <?php show_contact(); ?>
+          </tbody>
+        </table>
+          </div>
+        </div>
+      </div>
+    
       <!-- End Navbar -->
-    <?php include 'includes/footer.php' ?>
+  </div>
+  <?php include 'includes/footer.php' ?>
       

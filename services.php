@@ -7,7 +7,7 @@
 
           <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
             <h1 class="text-white font-weight-light text-uppercase font-weight-bold">Our Services</h1>
-            <p class="breadcrumb-custom"><a href="index.html">Home</a> <span class="mx-2">&gt;</span> <span>Services</span></p>
+            <p class="breadcrumb-custom"><a href="index.php">Home</a> <span class="mx-2">&gt;</span> <span>Services</span></p>
           </div>
         </div>
       </div>
@@ -33,7 +33,7 @@
                 <p>John Smith</p>
               </figure>
               <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                <p>&ldquo;This was the first time we’ve had need of a courier I truly don’t know how to thank you and the other folks at ZIM for helping today, I got the delivery notification and was so so relieved. Thank you doesn’t seem like enough, but please know we all appreciate ALL that you did for us and this patient today.&rdquo;</p>
               </blockquote>
             </div>
           </div>
@@ -44,7 +44,7 @@
                 <p>Christine Aguilar</p>
               </figure>
               <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                <p>&ldquo;I would be totally remiss if I did not tell you how great a job Zim Courier did for our client and for us here at Accutest. Dave Miles was a great ambassador for zim….always punctual, always very polite….totally reliable. Thanks so very much for taking care of us !!!!&rdquo;</p>
               </blockquote>
             </div>
           </div>
@@ -56,7 +56,7 @@
                 <p>Robert Spears</p>
               </figure>
               <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                <p>&ldquo;It was nice to be able to call and have everything taken care of. I will always use ZIM when I need a courier in the areas you serve. You completely took all the stress from the equation, were extremely professional, courteous, and on point with EVERYTHING. Your customer service is top notch!&rdquo;</p>
               </blockquote>
             </div>
           </div>
@@ -68,7 +68,7 @@
                 <p>Bruce Rogers</p>
               </figure>
               <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                <p>&ldquo;I have used so many courier services over the years and ZIM has been top on the list for many years now. They are a great group of people and I can’t find anyone to beat their rates!&rdquo;</p>
               </blockquote>
             </div>
           </div>

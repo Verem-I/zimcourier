@@ -7,7 +7,7 @@
               <div class="col-md-4">
                 <h2 class="footer-heading mb-4">Quick Links</h2>
                 <ul class="list-unstyled">
-                  <li><a href="About.php">About Us</a></li>
+                  <li><a href="about.php">About Us</a></li>
                   <li><a href="services.php">Services</a></li>
                   <li><a href="about.php">Testimonials</a></li>
                   <li><a href="contact.php">Contact Us</a></li>
@@ -16,7 +16,7 @@
               <div class="col-md-4">
                 <h2 class="footer-heading mb-4">Products</h2>
                 <ul class="list-unstyled">
-                  <li><a href="About.php">About Us</a></li>
+                  <li><a href="about.php">About Us</a></li>
                   <li><a href="services.php">Services</a></li>
                   <li><a href="about.php">Testimonials</a></li>
                   <li><a href="contact.php">Contact Us</a></li>

@@ -50,11 +50,11 @@
               <span class="number">1</span>
               <div class="how-it-work-body">
                 <h2>Choose Your Service</h2>
-                <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt praesentium dicta consectetur fuga neque fugit a at. Cum quod vero assumenda iusto.</p>
+                <p class="mb-5">We render variety of services, ranging from warehousing to ground shipping, air friet and many more. Choose a service that best suites your needs </p>
                 <ul class="ul-check list-unstyled white">
-                  <li class="text-white">Error minus sint nobis dolor</li>
-                  <li class="text-white">Voluptatum porro expedita labore esse</li>
-                  <li class="text-white">Voluptas unde sit pariatur earum</li>
+                  <li class="text-white">Navigate to the contact page</li>
+                  <li class="text-white">use any of your preferred means to reach an admin</li>
+                  <li class="text-white">Provide full details of what you need.</li>
                 </ul>
               </div>
             </div>
@@ -65,11 +65,11 @@
               <span class="number">2</span>
               <div class="how-it-work-body">
                 <h2>Select Your Payment</h2>
-                <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt praesentium dicta consectetur fuga neque fugit a at. Cum quod vero assumenda iusto.</p>
+                <p class="mb-5">We provide you with affordable shipping for all your logistics needs. We have variety of payment plans, depending on the mode of shipping.</p>
                 <ul class="ul-check list-unstyled white">
-                  <li class="text-white">Error minus sint nobis dolor</li>
-                  <li class="text-white">Voluptatum porro expedita labore esse</li>
-                  <li class="text-white">Voluptas unde sit pariatur earum</li>
+                  <li class="text-white">Navigate to the contact page</li>
+                  <li class="text-white">Use any means of communication you are comfortable with</li>
+                  <li class="text-white">An email would be sent Providing you with full cost of shipping</li>
                 </ul>
               </div>
             </div>
@@ -80,11 +80,11 @@
               <span class="number">3</span>
               <div class="how-it-work-body">
                 <h2>Tracking Your Order</h2>
-                <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt praesentium dicta consectetur fuga neque fugit a at. Cum quod vero assumenda iusto.</p>
+                <p class="mb-5">After payments for  services, a tracking number would be given to you which would contain the order details. Which would be used to check the Parcel status</p>
                 <ul class="ul-check list-unstyled white">
-                  <li class="text-white">Error minus sint nobis dolor</li>
-                  <li class="text-white">Voluptatum porro expedita labore esse</li>
-                  <li class="text-white">Voluptas unde sit pariatur earum</li>
+                  <li class="text-white">Navigate to the Track Order page</li>
+                  <li class="text-white">Input your tracking number</li>
+                  <li class="text-white">Click on Track order</li>
                 </ul>
               </div>
             </div>
@@ -94,44 +94,7 @@
       </div>
     </div>
 
-    <div class="site-section border-bottom">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-7 text-center border-primary">
-            <h2 class="font-weight-light text-primary" data-aos="fade">Our Team</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-            <div class="person">
-              <img src="images/person_2.jpg" alt="Image" class="img-fluid rounded mb-5">
-              <h3>Christine Rooster</h3>
-              <p class="position text-muted">Co-Founder, President</p>
-              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
-              
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
-            <div class="person">
-              <img src="images/person_3.jpg" alt="Image" class="img-fluid rounded mb-5">
-              <h3>Brandon Sharp</h3>
-              <p class="position text-muted">Co-Founder, COO</p>
-              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
-              
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
-            <div class="person">
-              <img src="images/person_4.jpg" alt="Image" class="img-fluid rounded mb-5">
-              <h3>Connor Hodson</h3>
-              <p class="position text-muted">Marketing</p>
-              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
     
     <div class="site-section border-bottom">
       <div class="container">
@@ -150,7 +113,7 @@
                 <p>John Smith</p>
               </figure>
               <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                <p>&ldquo;This was the first time we’ve had need of a courier I truly don’t know how to thank you and the other folks at ZIM for helping today, I got the delivery notification and was so so relieved. Thank you doesn’t seem like enough, but please know we all appreciate ALL that you did for us and this patient today.&rdquo;</p>
               </blockquote>
             </div>
           </div>
@@ -161,7 +124,7 @@
                 <p>Christine Aguilar</p>
               </figure>
               <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                <p>&ldquo;I would be totally remiss if I did not tell you how great a job Zim Courier did for our client and for us here at Accutest. Dave Miles was a great ambassador for zim….always punctual, always very polite….totally reliable. Thanks so very much for taking care of us !!!!&rdquo;</p>
               </blockquote>
             </div>
           </div>
@@ -173,7 +136,7 @@
                 <p>Robert Spears</p>
               </figure>
               <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                <p>&ldquo;It was nice to be able to call and have everything taken care of. I will always use ZIM when I need a courier in the areas you serve. You completely took all the stress from the equation, were extremely professional, courteous, and on point with EVERYTHING. Your customer service is top notch!&rdquo;</p>
               </blockquote>
             </div>
           </div>
@@ -185,7 +148,7 @@
                 <p>Bruce Rogers</p>
               </figure>
               <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                <p>&ldquo;I have used so many courier services over the years and ZIM has been top on the list for many years now. They are a great group of people and I can’t find anyone to beat their rates!&rdquo;</p>
               </blockquote>
             </div>
           </div>
@@ -193,5 +156,4 @@
         </div>
       </div>
     </div>
-
  <?php include 'includes/footer.php'?>

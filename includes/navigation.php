@@ -15,7 +15,7 @@
         <div class="row align-items-center">
           
           <div class="col-11 col-xl-2">
-            <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0">ZIM</a></h1>
+            <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0" style="font-size:24px;">ZIM</a></h1>
           </div>
           <div class="col-12 col-md-10 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
